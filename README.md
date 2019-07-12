@@ -29,7 +29,7 @@ There will be a collection of python scripts, exes, and who knows what; for the 
 - solarwinds-listalerts - Lists Orion alerts and draws attention to malicious BADministration alerts
 - solarwinds-alertremove - Removes the malicious alert
 - solarwinds-syscmd - Executes a system command on the Orion server via malicious alert
-- Standalone **x64** .NET BADministration_SWDump.exe - Scrapes memory for WMI credentials used by Orion.
+- Standalone **x64** 4.5 .NET BADministration_SWDump.exe - Scrapes memory for WMI credentials used by Orion.
   - Can consume large amounts of memory, use at your own risk
   - Compile me as x64
 
