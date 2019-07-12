@@ -2,7 +2,9 @@
 
 #### What is BADministration?
 
-BADministration is a tool which interfaces with management or administration applications from an offensive standpoint. It attempts to provide offsec personnel a tool with the ability to identify and leverage these non-technical vulnerabilities. As always: use for good, promote security, and fight application propagation.
+BADministration is a tool which interfaces with management or administration applications from an offensive standpoint. It attempts to provide offsec personnel a tool with the ability to identify and leverage these non-technical vulnerabilities. As always: use for good, promote security, and fight application propagation. 
+
+Sorry for using python2.7, I found a lot of the vendor APIs would only run on 2.7 and I'm not experienced enough to mix and match python versions.
 
 #### Application Propagation
 
