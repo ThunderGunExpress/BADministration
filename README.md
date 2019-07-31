@@ -44,9 +44,11 @@ There will be a collection of python scripts, exes, and who knows what; for the 
 - mcafee-listtasks - Lists all client tasks
 - mcafee-runtask - Runs target client deployment task
 
-##### McAfee EEDK
+##
 
-The ePO Endpoint Deployment Kit (EEDK) creates some sort of signed zip file which can be uploaded to ePO. A client task can be created referncing the zip file, giving privileged access to ePO clients. EEDK requires msvcp71.dll to run which is an old runtime library. I installed the .NET Framework SDK 1.1 to get access to msvcp71.dll but I suppose you could always download it from one of those single dll sites, I wouldn't recommend it though.
+#### McAfee EEDK
+
+The ePO Endpoint Deployment Kit (EEDK) creates some sort of signed zip file which can be uploaded to ePO. A client task can be created leveraging the zip file, giving privileged access to ePO clients. EEDK requires msvcp71.dll to run which is an old runtime library which can be found in the .NET Framework SDK Version 1.1.
 
 - EEDK Download - https://community.mcafee.com/t5/Documents/ePO-Endpoint-Deployment-Kit-9-6-1-Enterprise-Edition/ta-p/553541
 - Microsoft .NET Framework SDK Version 1.1 - https://www.microsoft.com/en-ca/download/details.aspx?id=16217
