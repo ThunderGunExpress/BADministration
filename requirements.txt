@@ -1,3 +1,6 @@
 pyfiglet==0.8.post1
 orionsdk==0.0.6
 termcolor==1.1.0
+mcafee-epo==1.0.3
+requests==2.21.0
+
