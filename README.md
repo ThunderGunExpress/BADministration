@@ -32,6 +32,26 @@ There will be a collection of python scripts, exes, and who knows what; for the 
 - Standalone **x64** 4.5 .NET BADministration_SWDump.exe - Scrapes memory for WMI credentials used by Orion.
   - Can consume large amounts of memory, use at your own risk
   - Compile me as x64
+  
+#### McAfee ePO
+
+- mcafee-enum - Module used to enumerate clients of ePO
+- mcafee-listpackages - Lists all ePO deployment packages
+- mcafee-removepackage - Removes ePO deployment packages
+- mcafee-uploadpackage - Uploads package created with McAfee ePO Endpoint Deployment Toolkit (EEDK)
+- mcafee-createtask - Creates client task using deployment package
+- mcafee-remotetask - Removes target client task
+- mcafee-listtasks - Lists all client tasks
+- mcafee-runtask - Runs target client deployment task
+
+##
+
+#### McAfee EEDK
+
+The ePO Endpoint Deployment Kit (EEDK) creates some sort of signed zip file which can be uploaded to ePO. A client task can be created leveraging the zip file, giving privileged access to ePO clients. EEDK requires msvcp71.dll to run which is an old runtime library which can be found in the .NET Framework SDK Version 1.1.
+
+- EEDK Download - https://community.mcafee.com/t5/Documents/ePO-Endpoint-Deployment-Kit-9-6-1-Enterprise-Edition/ta-p/553541
+- Microsoft .NET Framework SDK Version 1.1 - https://www.microsoft.com/en-ca/download/details.aspx?id=16217
 
 ### Check us out at 
 - https://ijustwannared.team
