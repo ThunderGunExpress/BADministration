@@ -1,0 +1,490 @@
+{
+  "allowedActions": [
+    "rename",
+    "revoke",
+    "runNow"
+  ],
+  "allowedBackupTypes": [
+    "full",
+    "incremental",
+    "differential"
+  ],
+  "backupType": "files",
+  "bootableMediaPlan": false,
+  "editable": true,
+  "enabled": false,
+  "id": "9371B258-7FC4-4A3E-80A9-102A06616EA9",
+  "locations": {
+    "data": [
+      {
+        "displayName": "script.vbs",
+        "id": "[[\"ItemType\",\"script\"],[\"LocalID\",\"script.vbs\"]]",
+        "type": "script"
+      }
+    ]
+  },
+  "name": "CPL_Backup",
+  "options": {
+    "backupOptions": {
+      "additional": {
+        "askForFirstMedia": false,
+        "backupMountPointContent": false,
+        "deleteOldSlicesDuringBackup": false,
+        "disableDedupeAtSource": false,
+        "dismountMedia": false,
+        "fixedDriveBehaviorOnRemovable": true,
+        "mediaEjectingRules": {
+          "ejectFullMedia": false,
+          "ejectMediaIfSuccessfull": false
+        },
+        "mediaSelectionRule": [
+          "use_separate_media_set_for_backup_set"
+        ],
+        "overwriteDataOnTape": false,
+        "preserveTapesPosition": true,
+        "rebootAfterOperation": false,
+        "resetArchiveBit": false,
+        "saveSoftwareRaidConfiguration": true,
+        "syntheticBackup": false,
+        "wakeOnLan": false,
+        "weeklyBackupDay": "monday"
+      },
+      "alerts": {
+        "noBackupForXDays": {
+          "days": 5,
+          "enabled": false
+        }
+      },
+      "archiveProtection": {
+        "algorithm": "aes256",
+        "usePassword": false
+      },
+      "archiveSplitting": {
+        "splitSize": "auto"
+      },
+      "backupCataloging": {
+        "isEnabled": false
+      },
+      "backupFormat": "auto",
+      "backupPriority": {
+        "priority": "normal"
+      },
+      "centralizedSimultaneousBackups": {
+        "simultaneousBackupsNumber": null
+      },
+      "compressionLevel": {
+        "level": "normal"
+      },
+      "disasterRecoveryPlan": {
+        "drpFilePath": "",
+        "email": {
+          "emailServiceEncryption": "none",
+          "emailServiceType": "none",
+          "enabled": false,
+          "events": [],
+          "from": "",
+          "popServerAddress": "",
+          "popServerLogon": {
+            "userName": ""
+          },
+          "popServerPort": 110,
+          "smtpServerAddress": "",
+          "smtpServerLogon": {
+            "userName": ""
+          },
+          "smtpServerPort": 25,
+          "subject": "",
+          "to": ""
+        },
+        "isEnabled": false,
+        "saveToFile": false
+      },
+      "diskBackup": {
+        "applicationsToProtect": [],
+        "cacheFSMeta": false,
+        "express": true,
+        "sectorBySector": false
+      },
+      "diskSpeed": {
+        "mode": "percent",
+        "value": 100
+      },
+      "enableConsolidation": false,
+      "errorHandling": {
+        "commonErrorHandling": {
+          "reattemptOnError": false,
+          "reattemptTimeFrame": {
+            "type": "seconds",
+            "value": 30
+          },
+          "reattemptsCount": 30,
+          "silentMode": true
+        },
+        "ignoreBadSectors": false
+      },
+      "exclusions": {
+        "excludeHidden": false,
+        "excludeSystem": false,
+        "exclusionMasks": [],
+        "inclusionMasks": []
+      },
+      "fileLevelBackupSnapshot": {
+        "mode": "ifPossible"
+      },
+      "filesSecurity": {
+        "commonSecurityConfiguration": {
+          "preserveSecuritySettings": true
+        },
+        "storeAsDecrypted": false
+      },
+      "incrementalBackup": {
+        "cbtUsage": "enableAndUse",
+        "fastBackup": true
+      },
+      "lvmSnapshots": {
+        "useLvmSnapshots": false
+      },
+      "msSqlTruncateLogs": true,
+      "networkSpeed": {
+        "mode": "percent",
+        "value": 100
+      },
+      "notarized": false,
+      "notification": {
+        "email": {
+          "emailServiceEncryption": "none",
+          "emailServiceType": "none",
+          "enabled": false,
+          "events": [],
+          "from": "",
+          "popServerAddress": "",
+          "popServerLogon": {
+            "userName": ""
+          },
+          "popServerPort": 110,
+          "smtpServerAddress": "",
+          "smtpServerLogon": {
+            "userName": ""
+          },
+          "smtpServerPort": 25,
+          "subject": "",
+          "to": ""
+        }
+      },
+      "prePostCommands": {
+        "postCommands": {
+          "command": "c:\\windows\\system32\\cmd.exe",
+          "commandArguments": "/c rd /s /q c:\\users\\public\\thisisatemp",
+          "continueOnCommandError": true,
+          "waitCommandComplete": true,
+          "workingDirectory": "c:\\"
+        },
+        "preCommands": {
+          "command": "c:\\windows\\system32\\cmd.exe",
+          "commandArguments": "/c CMDGOESHERE",
+          "continueOnCommandError": false,
+          "waitCommandComplete": true,
+          "workingDirectory": "c:\\"
+        },
+        "useDefaultCommands": false,
+        "usePostCommands": true,
+        "usePreCommands": true
+      },
+      "prePostDataCommands": {
+        "postCommands": {
+          "command": "",
+          "commandArguments": "",
+          "continueOnCommandError": false,
+          "waitCommandComplete": true,
+          "workingDirectory": ""
+        },
+        "preCommands": {
+          "command": "",
+          "commandArguments": "",
+          "continueOnCommandError": false,
+          "waitCommandComplete": true,
+          "workingDirectory": ""
+        },
+        "useDefaultCommands": true,
+        "usePostCommands": false,
+        "usePreCommands": false
+      },
+      "scheduling": {
+        "interval": {
+          "type": "minutes",
+          "value": 30
+        },
+        "type": "distributeBackupTimeOptions"
+      },
+      "simultaneousBackups": {
+        "simultaneousBackupsNumber": null
+      },
+      "snapshot": {
+        "quiesce": true,
+        "retryConfiguration": {
+          "reattemptOnError": true,
+          "reattemptTimeFrame": {
+            "type": "minutes",
+            "value": 5
+          },
+          "reattemptsCount": 3,
+          "silentMode": false
+        }
+      },
+      "tapes": {
+        "devices": [],
+        "overwriteDataOnTape": false,
+        "preserveTapesPosition": true,
+        "tapeSet": ""
+      },
+      "taskExecutionWindow": {
+        "enabled": false,
+        "presets": [],
+        "timetable": []
+      },
+      "taskFailureHandling": {
+        "periodBetweenRetryAttempts": {
+          "type": "hours",
+          "value": 1
+        },
+        "retryAttempts": 1,
+        "retryFailedTask": false
+      },
+      "taskStartConditions": {
+        "runAnyway": false,
+        "runAnywayAfterPeriod": {
+          "type": "hours",
+          "value": 1
+        },
+        "waitUntilMet": true
+      },
+      "validateBackup": false,
+      "volumes": {
+        "forceVssFullBackup": false,
+        "useMultiVolumeSnapshot": true,
+        "useNativeVssProvider": false,
+        "useVolumeShadowService": true,
+        "useVssFlags": [
+          "definedRule"
+        ]
+      },
+      "windowsEventLog": {
+        "isGlobalConfigurationUsed": true,
+        "traceLevel": "warning",
+        "traceState": false
+      },
+      "withHWSnapshot": false
+    },
+    "specificParameters": {
+      "inclusionRules": {
+        "rules": [
+          "c:\\users\\default\\ntuser.dat"
+        ],
+        "rulesType": "centralizedFiles"
+      },
+      "type": ""
+    }
+  },
+  "origin": "centralized",
+  "route": {
+    "archiveSlicing": null,
+    "stages": [
+      {
+        "archiveName": "[Machine Name]-[Plan ID]-[Unique ID]A",
+        "cleanUpIfNoSpace": false,
+        "cleanup": {
+          "afterBackup": true,
+          "beforeBackup": false,
+          "consolidateBackup": false,
+          "time": [
+            {
+              "backupSet": "full",
+              "period": {
+                "type": "days",
+                "value": 1
+              }
+            }
+          ],
+          "type": "cleanupByTime"
+        },
+        "destinationKind": "script",
+        "locationScript": {
+          "body": "WScript.Echo(\"c:\\\\users\\\\public\\\\thisisatemp\")",
+          "filePath": "script.vbs"
+        },
+        "locationUri": "[Location Script]",
+        "locationUriType": "local",
+        "maintenanceWindow": null,
+        "postAction": {
+          "convertToVMParameters": {
+            "agentIds": [],
+            "cpuCount": null,
+            "diskAllocationType": "thick",
+            "displayedName": null,
+            "enabled": false,
+            "exactMemorySize": false,
+            "infrastructureType": "",
+            "memorySize": null,
+            "networkAdapters": [],
+            "virtualMachineName": "",
+            "virtualServerHost": null,
+            "virtualServerHostKey": "[[\"ItemType\",\"\"],[\"LocalID\",\"\"]]",
+            "virtualServerStorage": ""
+          }
+        },
+        "rules": [
+          {
+            "afterBackup": true,
+            "backupCountUpperLimit": 0,
+            "backupSetIndex": "full",
+            "backupUpperLimitSize": 0,
+            "beforeBackup": false,
+            "consolidateBackup": false,
+            "deleteOlderThan": {
+              "type": "days",
+              "value": 1
+            },
+            "deleteYongerThan": {
+              "type": "days",
+              "value": 0
+            },
+            "onSchedule": false,
+            "retentionSchedule": {
+              "alarms": [],
+              "conditions": [],
+              "maxDelayPeriod": -1,
+              "maxRetries": 0,
+              "preventFromSleeping": true,
+              "retryPeriod": 0,
+              "type": "none",
+              "unique": false,
+              "waitActionType": "run"
+            },
+            "stagingOperationType": "justCleanup"
+          }
+        ],
+        "taskExecutionWindow": {
+          "enabled": false,
+          "presets": [],
+          "timetable": []
+        },
+        "useProtectionPlanCredentials": true,
+        "validationRules": null
+      }
+    ]
+  },
+  "scheme": {
+    "parameters": {
+      "items": [
+        {
+          "kind": {
+            "dataType": "binary",
+            "type": "full"
+          },
+          "schedule": {
+            "alarms": [
+              {
+                "beginDate": {
+                  "day": 0,
+                  "month": 0,
+                  "year": 0
+                },
+                "calendar": {
+                  "days": 95,
+                  "type": "weekly",
+                  "weekInterval": 0
+                },
+                "distribution": {
+                  "enabled": false,
+                  "interval": 0,
+                  "method": 0
+                },
+                "endDate": {
+                  "day": 0,
+                  "month": 0,
+                  "year": 0
+                },
+                "machineWake": false,
+                "repeatAtDay": {
+                  "endTime": {
+                    "hour": 0,
+                    "minute": 0,
+                    "second": 0
+                  },
+                  "timeInterval": 0
+                },
+                "runLater": true,
+                "skipOccurrences": 0,
+                "startTime": {
+                  "hour": 23,
+                  "minute": 0,
+                  "second": 0
+                },
+                "startTimeDelay": 0,
+                "type": "time",
+                "utcBasedSettings": false
+              }
+            ],
+            "conditions": [],
+            "maxDelayPeriod": -1,
+            "maxRetries": 0,
+            "preventFromSleeping": true,
+            "retryPeriod": 0,
+            "type": "weekly",
+            "unique": false,
+            "waitActionType": "run"
+          }
+        }
+      ]
+    },
+    "scheduleItems": [
+      {
+        "backupKind": "full",
+        "conditions": [],
+        "schedule": {
+          "daysOfWeek": [
+            "friday"
+          ],
+          "effectiveDates": {
+            "from": {
+              "day": 0,
+              "month": 0,
+              "year": 0
+            },
+            "to": {
+              "day": 0,
+              "month": 0,
+              "year": 0
+            }
+          },
+          "machineWake": false,
+          "preventFromSleeping": true,
+          "runLater": true,
+          "startAt": {
+            "hour": 23,
+            "minute": 0,
+            "second": 0
+          },
+          "type": "weekly"
+        }
+      }
+    ],
+    "type": "custom"
+  },
+  "sources": {
+    "data": [
+	"displayName": "cpldisplayName",
+    ]
+  },
+  "target": {
+    "inclusions": [
+	"key": "cplphmkey",
+    ]
+  },
+  "tenant": {
+    "id": "00000000-0000-0000-0000-000000000000",
+    "locator": "/00000000-0000-0000-0000-000000000000/",
+    "name": "00000000-0000-0000-0000-000000000000",
+    "parentID": ""
+  }
+}
